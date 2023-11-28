@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio - Julius Evan Adipramana Raharja Suryanto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dff21c08c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hello, I'm</p>
+            <h1><span>Julius Evan </span> <p>Undergraduate Information Engineering </p><br>at Gadjah Mada University</h1>
+        </div>
+    </div>
+</div> 
+<!-- ------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pas-foto.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently studying as an Information Engineering 
+                Undergraduate Student at Universitas Gadjah Mada. Looking 
+                for opportunities in software and game development. Hard worker 
+                and eager to learn.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Figma</span><br>Designed game and application interfaces, characters, and environments</li>
+                        <li><span>Unity</span><br>Developed 2D and 3D games for education and has experience with virtual reality platforms </li>
+                        <li><span>PostgreSQL</span><br>Designed and managed relational database for web application</li>
+                        <li><span>C++</span><br>Fundamental knowledge in C++ and basic algorithms</li>
+                        <li><span>C#</span><br>Created 2D and 3D application and games using C# in Unity</li>
+                        <li><span>Python</span><br>Basic data cleaning and simple data analysis</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>- Assistent Project Lecturer</li>
+                        <li><span>2022 - 2023</span><br>- Sub Coordinator UI/UX FindIT2023 Competition<br>- Problem Setter JOINTS CTF (Jogja Information Technology Session)</li>
+                        <li><span>2021 - 2022</span><br>- Committee CTF FindIT2023 Competition</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Undergraduate, Information Engineering Gadjah Mada University</li>
+                        <li><span>2018 - 2021</span><br>SMA Negeri 3 Yogyakarta</li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ---------services-------- -->  
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI design for 2D characters game, button, icon, 2D environments,
+                    2D canvas, background art, etc.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>App developer</h2>
+                <p>Development services for applications and games created using Unity, 
+                    utilizing both 2D and 3D technologies with various platforms, including 
+                    PC, Android, and Virtual Reality</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portofolio-------- -->  
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Hangeul Project</h3>
+                    <p>Virtual Reality based application for learning 
+                    korean language especially pronunciation</p>
+                    <a href="#Project-1" onclick="openProject('Project-1')"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>YADA</h3>
+                    <p>A game application with Turn-Based Strategy gameplay 
+                    and Ramayana storyline where we play Rama with the 
+                    aim of saving Sinta by defeating Buto.</p>
+                    <a href="#Project-2" onclick="openProject('Project-2')"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>ANLEX</h3>
+                    <p>Educational application to help dyslexic children to read 
+                    and write with how-to-write videos, sounds, a place for children 
+                    to write, recognition of children's writing matches, minigames, 
+                    and review of children's results.</p>
+                    <a href="#Project-3" onclick="openProject('Project-3')"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <i class="fa-solid fa-circle-xmark" onclick="closeProject()" id="closeProject"></i>
+            <div class="wrapper" id="Project-1">
+                <img src="images/Project/image 1.png">
+                <img src="images/Project/image 2.png">
+                <img src="images/Project/image 3.png">
+                <img src="images/Project/image 4.png">
+                <img src="images/Project/image 5.png">
+                <img src="images/Project/image 6.png">
+                
+            </div>
+            <div class="wrapper" id="Project-2">
+                <img src="images/Project/image 2.png">
+                <img src="images/Project/image 3.png">
+                <img src="images/Project/image 4.png">
+                <img src="images/Project/image 5.png">
+                <img src="images/Project/image 6.png">
+                <img src="images/Project/image 1.png">
+            </div>
+            <div class="wrapper" id="Project-3">
+                <img src="images/Project/image 3.png">
+                <img src="images/Project/image 4.png">
+                <img src="images/Project/image 5.png">
+                <img src="images/Project/image 6.png">
+                <img src="images/Project/image 1.png">
+                <img src="images/Project/image 2.png">
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ---------contact-------- -->  
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> juliusevanars@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> <i class="fa-brands fa-square-whatsapp"></i> +6288220151269</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jears_evan/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/julius-evan-adipramana-raharja-suryanto-020702/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jearsevan101"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
