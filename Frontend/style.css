@@ -279,6 +279,45 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+/* --------Website Project--------- */
+#website-projects {
+    margin: 50px 0; 
+  }
+  
+  #website-projects .work-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #website-projects .work {
+    width: 450px;
+    margin: 0 20px 20px 20px; 
+  }
+  #website-projects .layer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #website-projects .work:hover img {
+    transform: scale(1.1);
+  }
+  
+  #website-projects .work:hover .layer {
+    height: 100%;
+  }
+  
+  #website-projects #closeProject {
+    right: 20px; 
+  }
+  
+  #website-projects .wrapper {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    max-width: 100%;
+    margin-top: 10px;
+  }
 /* --------Project--------- */
 #Project-1{
     display: none;
